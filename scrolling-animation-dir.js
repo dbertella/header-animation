@@ -6,7 +6,7 @@ app.directive('scrollingAnimation', function () {
         restrict: 'A',
         link: function (scope, element, attrs) {
 
-            window.onscroll = function () {
+            window.addEventListener('scroll', function () {
                 var windowTop = angular.element(window).scrollTop(),
                     bodyTop = angular.element(document.querySelector('body')).offset().top,
                     offset = bodyTop - windowTop;
@@ -16,7 +16,7 @@ app.directive('scrollingAnimation', function () {
                     element.removeClass('scrolling');
                 }
 
-            }
+            });
         }
     };
 });
