@@ -1,2 +1,5 @@
-# header-animation
-Custom angular directive to add a class at an element on body scroll
+# Repository to store different kind of scripts
+Angular Directives 
+React Components
+
+Experiments in general
